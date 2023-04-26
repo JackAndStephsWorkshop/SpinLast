@@ -8,6 +8,7 @@ Set up a directory structure on your local computer that looks like this:
 
 
     SpinLast/
+    ├── getSessionKey.py
     ├── SpinLast.py 
     └── static/
         ├── styles.css
@@ -18,7 +19,17 @@ Set up a directory structure on your local computer that looks like this:
 
 ## Usage
 
-From the command line, navigate to the SpinLast directory and start the app.
+First, sign up for a Last.fm API account here, and record your Last.fm API Key and Shared Secret somewhere safe: https://www.last.fm/api/account/create 
+
+Edit the getSessionKey.py file to include your API Key and Shared Secret.
+
+From the command line, navigate to the SpinLast directory and run getSessionKey.py to get your permanent Last.fm Session Key.
+```bash
+python3 SpinLast.py
+```
+Edit the SpinLast.py file to include your API Key, Shared Secret, and Session Key.
+
+From the command line, navigate to the SpinLast directory and run the SpinLast.py application.
 ```bash
 python3 SpinLast.py
 ```
