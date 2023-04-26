@@ -19,7 +19,7 @@ Set up a directory structure on your local computer that looks like this:
 
 ## Usage
 
-First, sign up for a Last.fm API account here, and record your Last.fm API Key and Shared Secret somewhere safe: https://www.last.fm/api/account/create 
+First, sign up for a Last.fm API account here https://www.last.fm/api/account/create and record your Last.fm API Key and Shared Secret somewhere safe.
 
 Edit the getSessionKey.py file to include your API Key and Shared Secret.
 ```python3
