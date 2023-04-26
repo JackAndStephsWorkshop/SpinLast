@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinLast - Spinitron Scrobbler</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>SpinLast</h1>
+        <h2>The Spinitron Scrobbler</h2>
+        <form action="/submit" method="post">
+            <label for="spinitron-url">Enter Spinitron Radio Station URL:</label>
+            <input type="text" id="spinitron-url" name="spinitron-url" required>
+            <button type="submit">Start Scrobbling</button>
+        </form>
+    </div>
+</body>
+</html>

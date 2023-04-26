@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpinLast - Spinitron Scrobbler</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+    <script>
+        function updateLatestScrobble() {
+            // Make an AJAX request to the /latest_scrobble route
+            fetch('/latest_scrobble')
+                .then(response => response.json())
+                .then(data => {
+                    // Update the page content with the latest scrobbled song
+                    const messageElement = document.querySelector('.message');
+                    if (data.song && data.artist) {
+                        messageElement.textContent = 'Scrobbled: ' + data.song + ' by ' + data.artist;
+                    } else {
+                        messageElement.textContent = 'No scrobbled song';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching latest scrobble:', error);
+                });
+        }
+
+        // Periodically update the latest scrobbled song (e.g., every 60 seconds)
+        setInterval(updateLatestScrobble, 60000);
+
+        // Update the latest scrobbled song immediately on page load
+        updateLatestScrobble();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>SpinLast</h1>
+        <h2>The Spinitron Scrobbler</h2>
+        <label for="message">This field will update automatically as you listen</label>
+        <div class="message">{{ message }}</div>
+        <div class="button-container"> <!-- New container for the button -->
+            <a href="{{ url_for('index') }}">Go back</a>
+        </div>
+    </div>
+</body>
+</html>

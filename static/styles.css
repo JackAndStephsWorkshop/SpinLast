@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333333;
+}
+h2 {
+    text-align: center;
+    color: #333333;
+}
+.message {
+    margin-top: 0px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #0056b3;
+}
+/* Style the input field to take up the full width of the container */
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the total width */
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Add margin below the input field */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    display: block; /* Make the button a block-level element */
+    width: 100%; /* Set the width to 100% of the container */
+    padding: 10px; /* Add padding for better appearance */
+    background-color: #d51007; /* Set the background color to last.fm red */
+    color: #ffffff; /* Set the text color to white */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 4px; /* Add rounded corners */
+}
+
+/* Style the submit button on hover */
+button[type="submit"]:hover {
+    background-color: #b40e06; /* Darken the background color on hover */
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Style the "Go back" button */
+.container a {
+    background-color: #d51007; /* Set the background color to last.fm red */
+    color: #ffffff; /* Set the text color to white */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor to a pointer when hovering */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    border-radius: 4px; /* Add rounded corners */
+    display: inline-block; /* Make the link an inline-block element */
+    margin-top: 20px; /* Add top margin */
+    padding: 10px; /* Add padding for better appearance */
+    width: 50%; /* Set the width to 50% of the button container */
+}
+
+
+/* Style the "Go back" button on hover */
+.container a:hover {
+    background-color: #b40e06; /* Darken the background color on hover */
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
