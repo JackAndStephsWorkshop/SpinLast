@@ -23,7 +23,7 @@ First, sign up for a Last.fm API account here, and record your Last.fm API Key a
 
 Edit the getSessionKey.py file to include your API Key and Shared Secret.
 
-From the command line, navigate to the SpinLast directory and run getSessionKey.py to get your permanent Last.fm Session Key.
+From the command line, navigate to the SpinLast directory and run getSessionKey.py and follow it's instructions to get your permanent Last.fm Session Key.
 ```bash
 python3 SpinLast.py
 ```
@@ -35,7 +35,7 @@ python3 SpinLast.py
 ```
 Visit the self-hosted website at http://localhost:5000/ and submit any Spinatron URL to start scrobbling automatically. 
 
-The application will continue running and display the most recently scrobbled track as the Spinitron playlist plays in real time. 
+The application will continue running and the webpage will display the most recently scrobbled track as the Spinitron playlist plays in real time. 
 
 ## Contributing
 
