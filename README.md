@@ -48,9 +48,9 @@ From the command line, navigate to the SpinLast directory and run the SpinLast.p
 ```bash
 python3 SpinLast.py
 ```
-Visit the self-hosted website at http://localhost:5000/ and submit any Spinatron URL (like https://spinitron.com/KXLU/) to start scrobbling automatically. 
+Visit the self-hosted website at http://localhost:5000/ and submit any Spinitron URL (like https://spinitron.com/KXLU/) to start scrobbling automatically. 
 
-The application will continue running and the webpage will display the most recently scrobbled track as the Spinitron playlist plays in real time. 
+The application will continue running and the web page will display the most recently scrobbled track as the Spinitron playlist plays in real time. 
 
 ## Contributing
 
